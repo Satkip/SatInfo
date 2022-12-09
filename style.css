@@ -84,6 +84,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .f_child {
   display: table-row !important;
+  font-weight: 700;
 }
 
 .s_child {
