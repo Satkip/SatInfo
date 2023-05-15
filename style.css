@@ -118,10 +118,6 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
 }
 
-table tbody tr:nth-child(5) {
-  display: none;
-}
-
 table tbody tr td a b {
   font-size: 0px !important;
 }
@@ -133,6 +129,10 @@ table tbody tr td a img {
 table tbody tr td a img {
   width: 30px !important;
   height: 20px !important;
+}
+
+table tbody tr:nth-child(4) {
+  display: none;
 }
 
 .WNcol1 {
@@ -153,4 +153,45 @@ table tbody tr td a img {
 
 .WNtopmenu2 tr:nth-child(even) td {
     background-color: transparent !important;
+}
+
+.headerkurs {
+  display: none;
+}
+
+#kursinfo3 .headtabl {
+  display: none;
+}
+
+#kursinfo3 .kontentinfo .dat {
+  display: none;
+}
+
+#kursinfo3 .kontentinfo a {
+  display: none !important;
+}
+
+#kursinfo3 {
+  width: 198px;
+  height: 0 !important;
+  font-size: 20px !important;
+  font-family: 'Roboto', sans-serif;
+  border: none !important;
+  line-height: 1.1;
+  margin: 0 !important;
+  color: #fff;
+}
+
+.level- {
+  display: none !important;
+}
+
+.kyrsvalyt tbody tr th {
+  display: none !important;
+}
+
+.kontentinfo {
+  position: absolute;
+  top: 50%;
+  transform: translateY(50%);
 }
