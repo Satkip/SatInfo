@@ -25,8 +25,8 @@
    }
   </script>
   <script>
-!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-</script>
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+  </script>
 </head>
 
 <body>
@@ -36,7 +36,7 @@
 
 
       <div class="currency">
-        <div align="center" style="margin-top: 20px; "><div align="center" style="margin: 0px; padding: 0px; width: 100px; background-color: transparent;"><noscript><div align="center" style="width: 100%; margin: 0px; padding: 0px; text-align: center; color: rgb(255, 255, 255); background-color: transparent;"><a href="https://fx-rate.net/KZT/" style="text-decoration: none; font-size: 20px; font-weight: bold; text-align: center; color: rgb(255, 255, 255);"><img src="https://fx-rate.net/images/countries/kz.png" style="margin: 0px; padding: 0px; border: none;"></a></div></noscript><script type="text/javascript" src="https://fx-rate.net/fx-rates2.php?label_name=Обменный курс казахстанского тенге&lab=0&width=195&currency=KZT&cp1_Hex=ffffff&cp2_Hex=333333&cp3_Hex=333333&hbg=0&flag_code=kz&length=short&label_type=country_name&cp=ffffff,333333,333333&cid=USD,EUR,RUB&lang=ru"></script></div></div>
+        <div id="kyrs"></div>
       </div>
 
         <h1 class="header_title">SAT<span>&#x2022;</span>TOWER</h1>
@@ -111,7 +111,8 @@
 
 
 <script>digitalClock();</script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script type="text/javascript"> ;(function($){ $( "#kyrs" ).load( "https://kurs-tenge.kz/informers/kursinfo.php?kursinfo=3" ); })(jQuery); </script>
 
 </body>
 
